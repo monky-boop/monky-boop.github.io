@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Estructura</title>
+    </head>
+    <body>
+        <!--Titulo en el contenido-->
+        <h1>Estructura</h1>
+        <!--Navegación-->
+        <nav>
+            <!--Título de sección-->
+            <h2>Enlaces</h2>
+            <!--Párrafo-->
+            <p>
+                <!--Hipervínculo-->
+                <a target="_blank" rel="noreferrer" href="https://www.google.com/">Google</a>
+            </p>
+            <p>
+                <!--Hipervínculo-->
+                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/">Google Maps</a>
+            </p>
+            <p>
+                <!--Hipervínculo-->
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/">Youtube</a>
+            </p>
+        </nav>
+        <!--Párrafos-->
+        <p>Hola Mundo</p>
+        <p>Más texto</p>
+        <p>
+            En HTML cuando varios
 
-<head>
-
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width">
-
- <title>Ejemplo de servicio</title>
-
-</head>
-
-<body>
- <h1>Ejemplo de servicio</h1>
-
- <button onclick="ejecuta()">
-  Ejecuta
- </button>
-
- <script>
-
-  async function ejecuta() {
-   try {
-    // Se conecta a servicio.php y recibe su respuesta.
-    const resp =
-     await fetch("servicio.php")
-    if (resp.ok) {
-     const texto =
-      await resp.text()
-     alert(texto)
-    } else {
-     throw new Error(
-      resp.statusText)
-    }
-   } catch (error) {
-    console.error(error)
-    alert(error.message)
-   }
-  }
-
- </script>
-
-</body>
-
+            saltos de línea
+                y espacios van juntos, se muestra como un solo espacio.
+        </p>
+        <p>
+            El texto fluye de forma responsiva, ocupando todo el espacio horizontal y
+            continuando en ell siguiente renglon.
+        </p>
+        <p>Se recomienda que las líneas de código tengan un máximo de 80 caracteres.</p>
+        <!--Maps-->
+        <h1>Google Maps</h1>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13543.669632609111!2d-98.98528249862494!3d19.406742302445668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1782739328891!5m2!1ses!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+        <!--Facebook-->
+        <h1>Facebook</h1>
+        <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frecetasycocinar&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+            width="340" height="500"
+            style="border:none;overflow:hidden"
+            scrolling="no" frameborder="0"
+            allowTransparency="true"
+            allow="encrypted-media">
+        </iframe>
+        <!--Video de Youtube-->
+        <h1>Video de Youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q7IFjVUUb_E?si=R6CDG2naX7lPKXnT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <!--Pie de página-->
+        <footer>
+            <p>© 2026 Monserrath Álvarez Gutiérrez</p>
+        </footer>
+    </body>
 </html>
